@@ -36,8 +36,8 @@ function decrease(n){
  * @return {number} the sum
  */
 
-function sum(x,y){
-	return x + y;
+function add(x,y){
+	return x + y
 };
 
 
@@ -48,9 +48,9 @@ function sum(x,y){
  * @return {number} the difference
  */
 
-function difference(x,y){
+function subtract(x,y){
 	return x - y;
-}
+};
 
 
 /**
@@ -62,7 +62,7 @@ function difference(x,y){
 
  function multiply(x,y){
  	return x * y;
- }
+ };
 
 /**
  * Divides the first number by the second.
@@ -82,7 +82,7 @@ function divide(x, y){
  * @return {number} squared
  */
 
-function multiply(x){
+/*function multiply(x){
 	return x * x;
 }
 
@@ -95,7 +95,7 @@ function multiply(x){
  * @return {number} the result
  */
 
-function action("add", x,y){
+/*function action("add", x,y){
 	return add(x,y);
 }
 
@@ -106,7 +106,7 @@ function action("add", x,y){
  * @return {boolean} `a` is larger than `b`
  */
 
-function burger(a,b){
+/*function burger(a,b){
 	if(a > b){
 		return true;
 	}
@@ -119,7 +119,7 @@ function burger(a,b){
  * @return {boolean} `a` is smaller than `b`
  */
 
-function fries(a,b){
+/*function fries(a,b){
 	if(a < b){
 		return true;
 	}
@@ -132,6 +132,13 @@ function fries(a,b){
  * @return {boolean} the numbers are equal
  */
 
+/*function drink(a,b){
+	if(a === b){
+		return true;
+	}else{
+		return false;
+	}
+}
 
 
 
