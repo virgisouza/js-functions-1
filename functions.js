@@ -4,6 +4,10 @@
  * @return {string} the number as a string
  */
 
+function numberToString(n){
+	  return "" + n;
+};
+
 
 /**
  * Adds one to a given number.
@@ -11,6 +15,9 @@
  * @return {number}
  */
 
+function increase(n){
+	return n+1;
+};
 
 /**
  * Subtracts one from a given number.
@@ -18,6 +25,9 @@
  * @return {number}
  */
 
+function decrease(n){
+	return n - 1;
+}
 
 /**
  * Adds two numbers.
@@ -25,6 +35,10 @@
  * @param {number} y
  * @return {number} the sum
  */
+
+function sum(x,y){
+	return x + y;
+};
 
 
 /**
@@ -34,6 +48,10 @@
  * @return {number} the difference
  */
 
+function difference(x,y){
+	return x - y;
+}
+
 
 /**
  * Multiplies two numbers.
@@ -42,6 +60,9 @@
  * @return {number} the product
  */
 
+ function multiply(x,y){
+ 	return x * y;
+ }
 
 /**
  * Divides the first number by the second.
@@ -50,6 +71,10 @@
  * @return {number} the quotient
  */
 
+function divide(x, y){
+	return x/y;
+}
+
 
 /**
  * Multiplies a number by itself.
@@ -57,6 +82,9 @@
  * @return {number} squared
  */
 
+function multiply(x){
+	return x * x;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -67,6 +95,9 @@
  * @return {number} the result
  */
 
+function action("add", x,y){
+	return add(x,y);
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -75,6 +106,11 @@
  * @return {boolean} `a` is larger than `b`
  */
 
+function burger(a,b){
+	if(a > b){
+		return true;
+	}
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -83,6 +119,11 @@
  * @return {boolean} `a` is smaller than `b`
  */
 
+function fries(a,b){
+	if(a < b){
+		return true;
+	}
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -90,6 +131,8 @@
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+
+
 
 
 /**
