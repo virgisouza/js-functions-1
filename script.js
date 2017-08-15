@@ -14,12 +14,15 @@ function runAfterTests() {
    * Assign it the value that's returned when you pass
    * `myNumber into the function `numberToString`.
    */
-   
+var stringValue = cactus;
 
   /**
    * If you pass `myNumber` and `stringValue` into `areEqual`,
    * what value will you get back? Why is that?
    */
+
+   console.log(areEqual(myNumber, stringValue));
+ 
 
   /**
    * You may have noticed that the `calculate` function combined
@@ -27,6 +30,8 @@ function runAfterTests() {
    * Did you try to use those functions _inside_ of `calculate`?
    * If you didn't go back and try it, this is called "reusability"!
    */
+
+   yes
 
   // Do you see any other functions where code could be reused?
 
@@ -37,6 +42,28 @@ function runAfterTests() {
    * Does it still work as expected? If it doesn't, how could you improve this?
    */
 
+function letterGrade(score, total){
+  var grade = ((score/total) * 100);
+  //console.log(grade);
+  if(grade > 100){
+    console.log("Call Elon you're a genius!")
+  }else if(grade >= 90 && grade <= 100){
+    console.log("A")
+  }else if(grade >= 80 && grade <= 89){
+    console.log("B")
+  }else if(grade >= 70 && grade <= 79){
+    console.log("C")
+  }else if(grade >= 60 && grade <= 69){
+    console.log("D")
+  }else if(grade >= 0 && grade <=59){
+    console.log("F")
+  }else{
+    console.log("Study Up!")
+  }
+  }
+  
+};
+
   /**
    * Your `combine` function looks okay,
    * but what if you wanted to join it with ANY string instead of a single space?
@@ -45,8 +72,12 @@ function runAfterTests() {
    * third parameter called `glue` (a string value).
    */
 
+   function improvedCombine(word1, word2, glue){
+      console.log(word1 + word2 + word3)
+   }
+
   // What happens if you were to uncomment the following lines?
 
-  // combine = improvedCombine;
-  // console.log(combine('combine', 'improved!', ' is '));
+  combine = improvedCombine;
+  console.log(combine('combine', 'improved!', ' is '));
 }

@@ -5,7 +5,8 @@
  */
 
 function numberToString(n){
-	  return "" + n;
+	  var cactus = "" + n;
+    return cactus
 };
 
 
@@ -70,7 +71,7 @@ function subtract(x,y){
  * @param {number} y
  * @return {number} the quotient
  */
-
+ 
 function divide(x, y){
 	return x/y;
 };
@@ -95,7 +96,7 @@ function square(x){
  * @return {number} the result
  */
 
-function calculate("add", x, y){
+function calculate(add, x, y){
 	console.log("x + y = sum");
 	return add(x,y);
 };
@@ -211,7 +212,9 @@ function isEven(n){
 function letterGrade(score, total){
   var grade = ((score/total) * 100);
   //console.log(grade);
-  if(grade >= 90 && grade <= 100){
+  if(grade > 100){
+    console.log("Call Elon you're a genius!")
+  }else if(grade >= 90 && grade <= 100){
     console.log("A")
   }else if(grade >= 80 && grade <= 89){
     console.log("B")
@@ -219,8 +222,11 @@ function letterGrade(score, total){
     console.log("C")
   }else if(grade >= 60 && grade <= 69){
     console.log("D")
-  }else {
+  }else if(grade >= 0 && grade <=59){
     console.log("F")
+  }else{
+    console.log("Study Up!")
+  }
   }
   
 };
