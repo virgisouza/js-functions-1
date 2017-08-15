@@ -27,7 +27,7 @@ function increase(n){
 
 function decrease(n){
 	return n - 1;
-}
+};
 
 /**
  * Adds two numbers.
@@ -73,7 +73,7 @@ function subtract(x,y){
 
 function divide(x, y){
 	return x/y;
-}
+};
 
 
 /**
@@ -82,9 +82,9 @@ function divide(x, y){
  * @return {number} squared
  */
 
-/*function multiply(x){
-	return x * x;
-}
+function square(x){
+	return x ** 2 ;
+};
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -95,9 +95,10 @@ function divide(x, y){
  * @return {number} the result
  */
 
-/*function action("add", x,y){
+function calculate("add", x, y){
+	console.log("x + y = sum");
 	return add(x,y);
-}
+};
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -106,11 +107,11 @@ function divide(x, y){
  * @return {boolean} `a` is larger than `b`
  */
 
-/*function burger(a,b){
+function isGreaterThan(a,b){
 	if(a > b){
 		return true;
 	}
-}
+};
 
 /**
  * Returns true if `a` is less than `b`.
@@ -119,11 +120,11 @@ function divide(x, y){
  * @return {boolean} `a` is smaller than `b`
  */
 
-/*function fries(a,b){
+function isLessThan(a,b){
 	if(a < b){
 		return true;
 	}
-}
+};
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -132,7 +133,7 @@ function divide(x, y){
  * @return {boolean} the numbers are equal
  */
 
-/*function drink(a,b){
+function areEqual(a,b){
 	if(a === b){
 		return true;
 	}else{
@@ -149,6 +150,11 @@ function divide(x, y){
  * @return {number} the smallest number
  */
 
+function minimum(x,y){
+	return Math.min(x,y);
+}
+
+
 
 /**
  * Returns the largest value of two numbers.
@@ -157,6 +163,9 @@ function divide(x, y){
  * @return {number} the largest number
  */
 
+function maximum(x,y){
+	return Math.max(x,y);
+}
 
 /**
  * Returns true if `n` is even.
@@ -164,12 +173,27 @@ function divide(x, y){
  * @return {boolean} the number is even
  */
 
+function isEven(n){
+	if(n%2 == 0){
+		return true;
+	}else{
+		return false;
+	}
+};
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
+
+ function isOdd(n){
+ 	if(n%2 == 1){
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ };
 
 
 /**
@@ -184,6 +208,22 @@ function divide(x, y){
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score, total){
+  var grade = ((score/total) * 100);
+  //console.log(grade);
+  if(grade >= 90 && grade <= 100){
+    console.log("A")
+  }else if(grade >= 80 && grade <= 89){
+    console.log("B")
+  }else if(grade >= 70 && grade <= 79){
+    console.log("C")
+  }else if(grade >= 60 && grade <= 69){
+    console.log("D")
+  }else {
+    console.log("F")
+  }
+  
+};
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -193,6 +233,30 @@ function divide(x, y){
  * @return {object} restaurant
  */
 
+var restaurant = {
+  name: "Salad House",
+  reviews: 4,
+};
+
+//console.log(restaurant);
+
+//console.log(restaurant.reviews);
+
+//console.log(restaurant.hasOwnProperty('reviews'));
+
+
+function incrementReviews(restaurant){
+	if(restaurant.hasOwnProperty('reviews')=== true){
+      ((restaurant.reviews)++);
+      console.log(restaurant.reviews);
+    }else{
+      ((restaurant.reviews)--);
+      console.log(restaurant.reviews);
+    }
+};
+
+incrementReviews(restaurant);
+
 
 /**
  * Joins two strings with a space.
@@ -200,6 +264,16 @@ function divide(x, y){
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+var word1 = "Hamburger";
+var word2 = "Buns";
+
+function combine(word1, word2){
+  console.log(word1 + " " + word2);
+};
+
+combine(word1, word2);
+
 
 
 /**
@@ -209,4 +283,19 @@ function divide(x, y){
  * @param {number} radius
  * @return {object} circle
  */
+
+
+ function createCircle(radius){
+   var circle = {};
+   //console.log(circle)
+ 	  circle.area = (Math.PI *(radius ** 2));
+   //console.log(circle.area)
+     circle.circumference = (2 * (Math.PI * radius));
+   //console.log(circle.circumference)
+   //console.log(circle)
+   return circle;
+ };
+
+createCircle(4);
+console.log(createCircle(4));
 

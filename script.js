@@ -7,11 +7,14 @@ function runAfterTests() {
 
   // Create a variable called `myNumber`, and assign it to any number
 
+  var myNumber = 4;
+
   /**
    * Create another variable called `stringValue`.
    * Assign it the value that's returned when you pass
    * `myNumber into the function `numberToString`.
    */
+   
 
   /**
    * If you pass `myNumber` and `stringValue` into `areEqual`,
